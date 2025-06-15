@@ -26,7 +26,7 @@ export default function Home() {
 
     // If we do have a token, fetch profile
     axios
-      .get("http://localhost:5000/eventRoute/profile", {
+      .get("https://event-management-system-0w2o.onrender.com/eventRoute/profile", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {

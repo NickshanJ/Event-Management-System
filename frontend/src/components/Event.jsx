@@ -21,7 +21,7 @@ export default function EventPage() {
       }
 
       await axios.post(
-        `http://localhost:5000/eventRoute/book-event/${id}`,
+        `https://event-management-system-0w2o.onrender.com/eventRoute/book-event/${id}`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -46,7 +46,7 @@ export default function EventPage() {
       }
 
       await axios.post(
-        "http://localhost:5000/eventRoute/create-event",
+        "https://event-management-system-0w2o.onrender.com/eventRoute/create-event",
         newEvent,
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -86,7 +86,7 @@ export default function EventPage() {
     try {
       setLoading(true);
       const res = await axios.get(
-        "http://localhost:5000/eventRoute/event-list"
+        "https://event-management-system-0w2o.onrender.com/eventRoute/event-list"
       );
 
       setEvents(res.data);
@@ -104,7 +104,7 @@ export default function EventPage() {
     if (token) {
       // Get User first (for profile info)
       axios
-        .get("http://localhost:5000/eventRoute/profile", {
+        .get("https://event-management-system-0w2o.onrender.com/eventRoute/profile", {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((res) => setUser(res.data))

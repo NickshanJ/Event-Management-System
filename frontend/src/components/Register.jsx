@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import BG from "../assets/BG.jpg";
-import Logo from "../assets/Logo.jpg";
 
 export default function Register() {
   // Local state for form inputs
@@ -22,7 +21,7 @@ export default function Register() {
       setError(null);
       setSuccess(null);
       const response = await fetch(
-        "http://localhost:5000/eventRoute/create-user",
+        "https://event-management-system-0w2o.onrender.com/eventRoute/create-user",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

@@ -14,7 +14,7 @@ export default function MyProfile() {
 
     if (token) {
       axios
-        .get("http://localhost:5000/eventRoute/profile", {
+        .get("https://event-management-system-0w2o.onrender.com/eventRoute/profile", {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((res) => setUser(res.data))
