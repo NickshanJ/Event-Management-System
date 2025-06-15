@@ -27,7 +27,7 @@ It includes a profile section where users can view their booked events, a list o
 ### 1. Clone the repository:
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/NickshanJ/Event-Management-System.git
 cd event-management-system
 
 ### 2. Install dependencies:
@@ -75,14 +75,12 @@ API (Server): http://localhost:5000
 # Admin:
 
 Username: admin
-
 Password: admin123
 
 # User:
 
-Username: user
-
-Password: user123
+Username: Test
+Password: 123456
 
 ### How to Use
 ✅ Signup or login with your account.
