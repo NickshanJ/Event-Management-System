@@ -75,7 +75,7 @@ export default function Home() {
         {/* Right side (Your Booked Events)*/}
         <div className="flex-1">
           {loading ? (
-            <p>Loading...</p>
+            <p className="text-gray-50 animate-bounce font-bold">Loading...</p>
           ) : error ? (
             <p className="text-red-500 mt-4">Error: {error}</p>
           ) : user && user.bookedEvents.length > 0 ? (

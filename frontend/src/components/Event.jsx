@@ -124,7 +124,7 @@ export default function EventPage() {
       {/* Main content with events */}
       <div className="flex-1 p-16 flex flex-col items-center justify-start">
         {loading ? (
-          <p className="text-gray-50">Loading...</p>
+          <p className="text-gray-50 animate-bounce font-bold">Loading...</p>
         ) : error ? (
           <p className="text-red-500 mt-4">Error: {error}</p>
         ) : (

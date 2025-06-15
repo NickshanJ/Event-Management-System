@@ -32,7 +32,7 @@ export default function MyProfile() {
       {/* Main content for MyProfile */}
       <div className="flex-1 p-16">
         {loading ? (
-          <p className="text-gray-50">Loading...</p>
+          <p className="text-gray-50 animate-bounce font-bold">Loading...</p>
         ) : error ? (
           <p className="text-red-500 mt-4">Error: {error}</p>
         ) : user ? (

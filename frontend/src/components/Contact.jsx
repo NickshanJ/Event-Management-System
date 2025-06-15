@@ -99,7 +99,7 @@ export default function ContactPage() {
 
             <button
               disabled={loading}
-              className="w-full p-3 rounded-md bg-orange-500 hover:bg-orange-600 transition-colors font-semibold shadow-md disabled:bg-gray-500 disabled:cursor-wait"
+              className="w-full p-3 font-bold rounded-md bg-orange-500 hover:bg-orange-600 transition-colors shadow-md disabled:bg-gray-500 disabled:cursor-wait"
             >
               {loading ? "Sending…" : "Send"}
             </button>
