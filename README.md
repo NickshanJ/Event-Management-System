@@ -67,9 +67,10 @@ cd frontend
 npm run dev
 
 ### 5. Access the application:
-Frontend (Client): http://localhost:5173
+Frontend (Client): https://event-managementsystem.netlify.app/
 
-API (Server): http://localhost:5000
+API (Server): https://event-management-system-0w2o.onrender.com
+
 
 ## Demo Accounts (Fill in with your own)
 # Admin:
